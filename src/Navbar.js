@@ -10,7 +10,7 @@ function Navbar(props) {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/reels">Demo Reels</Link></li>
           <li><Link to="/illustrations">Illustrations</Link></li>
-          <li><Link to="/sketches">Skeches</Link></li>
+          <li><Link to="/sketches">Sketches</Link></li>
         </ul>
       </nav>
     );
