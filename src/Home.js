@@ -10,6 +10,7 @@ function Main(props) {
                     <source src={require("./img/headervid.mp4")} />
                 </video>
             </header>
+            
         </div>
     );
 }
