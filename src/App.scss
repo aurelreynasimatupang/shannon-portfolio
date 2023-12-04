@@ -26,6 +26,9 @@ h1{
   font-size: 64px;
   font-weight: 900;
 }
+h2{
+  font-weight: 300;
+}
 
 #home{
   padding:100px 80px 10px 80px;
@@ -168,4 +171,42 @@ nav ul li{
   .boxes {
     grid-template-columns: 1fr;
   }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-pic{
+  height:200px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  img{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    transition: all 200ms ease;
+  }
+  img:hover{
+    min-height:125%;
+    min-width:125%;
+  }
+}
+
+div > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
 }

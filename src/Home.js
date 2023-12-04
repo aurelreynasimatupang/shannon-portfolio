@@ -8,6 +8,7 @@ function Main(props) {
         <div>
             <NavBarHome />
             <header className="App-header">
+                <h3>•Animation•</h3>
                 <h1>Louisa Shannon Tara</h1>
                 <h2>Animation Student</h2>
                 <video autoPlay loop muted plays-inline class="back-video">
@@ -17,6 +18,11 @@ function Main(props) {
             <div id="home">
                 <h3>About</h3>
                 <p>Graduate from The One Academy.</p>
+                <div class="gallery w-100">
+                    <div class="gallery-pic"><img src={require("./img/img.jpg")} alt="character concept by Louisa Shannon Tara" title="Louisa Shannon Tara"></img> </div>
+                    <div class="gallery-pic"><img src={require("./img/img2.jpg")}></img> </div>
+                    <div class="gallery-pic"><img src={require("./img/img3.jpg")}></img> </div>
+                </div>
             </div>
             <Footer />
         </div>
