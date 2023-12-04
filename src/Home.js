@@ -20,8 +20,8 @@ function Main(props) {
                 <p>Graduate from The One Academy.</p>
                 <div class="gallery w-100">
                     <div class="gallery-pic"><img src={require("./img/img.jpg")} alt="character concept by Louisa Shannon Tara" title="Louisa Shannon Tara"></img> </div>
-                    <div class="gallery-pic"><img src={require("./img/img2.jpg")}></img> </div>
-                    <div class="gallery-pic"><img src={require("./img/img3.jpg")}></img> </div>
+                    <div class="gallery-pic"><img src={require("./img/img2.jpg")} alt="Color study Illustration by Louisa Shannon Tara" title="Color study Illustration by Louisa Shannon Tara"></img> </div>
+                    <div class="gallery-pic"><img src={require("./img/img3.jpg")} alt="Color study Illustration by Louisa Shannon Tara" title="Color study Illustration by Louisa Shannon Tara"></img> </div>
                 </div>
             </div>
             <Footer />
