@@ -13,7 +13,7 @@ function Navbar(props) {
        var scrollPosition = window.scrollY;
        var sectionOffset = document.getElementById("home").offsetTop;
 
-      if (scrollPosition > sectionOffset) {
+      if (scrollPosition > (sectionOffset-100-50)) {
         setColor("#7844cc");
         setLogo({'background-color':'#7844cc','border-radius':'5px', 'transition': 'all 200ms ease;'});
         setBackground({'background-color':'rgba(245, 245, 245, 1)', 'transition': 'all 200ms ease;'})
@@ -38,7 +38,7 @@ function Navbar(props) {
           <li><Link to="/" style={{color}}>Home</Link></li>
           <li><Link to="/reels" style={{color}}>Demo Reels</Link></li>
           <li><Link to="/illustrations" style={{color}}>Illustrations</Link></li>
-          <li><Link to="/sketches" style={{color}}>Commission</Link></li>
+          <li><Link to="/commission" style={{color}}>Commission</Link></li>
         </ul>
       </nav>
     );

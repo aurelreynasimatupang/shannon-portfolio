@@ -17,7 +17,6 @@ function Main(props) {
                 </video>
             </header>
             <section id="home">
-                <br/><br/>
                 <h3>About</h3>
                 <p>Graduate from The One Academy.</p>
                 <div class="row">

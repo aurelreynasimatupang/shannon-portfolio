@@ -94,7 +94,8 @@ section{
 
 .gallery-big{
   margin: 0;
-  height:400px;
+  min-height:400px;
+  max-height: 720px;
   overflow: hidden;
   position: relative;
   display: inline-block;
