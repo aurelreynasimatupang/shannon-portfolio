@@ -1,0 +1,172 @@
+//illus
+
+#illus{
+    padding:50px 120px 50px 120px;
+    h2{
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        font-size: 48px;
+        justify-content: center;
+    }
+}
+
+.illus-gallery{  
+    max-height: 650px;
+    min-height: 500px;
+    width: 100%;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 5fr 3fr;
+
+    .illus-gallery-2{
+        grid-gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .illus-gallery-3{
+        grid-gap: 10px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+  
+
+.card{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(33, 19, 39, 0.7);
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: 0.3s;
+    img{
+        position: absolute;
+        width: 110%;
+        height: 110%;
+        transition: 0.3s;
+    }
+    .btn-purple{
+        display: none;
+        max-width: 150px;
+        background-color:#7844cc;
+        color: white;
+        position: absolute;
+    }
+    h3{
+        display: none;
+        transition: 200ms;
+        font-weight: 500px;
+        position: absolute;
+    }
+}
+
+.card-landscape{
+    .btn-purple{
+        bottom: 15px;
+        left: 10px;
+    }
+    h3{
+        bottom: 45px;
+        left: 10px;
+    }
+    img{
+        left: -10%;
+        top:-10%;
+        min-width: 120%;
+        min-height: 140%;
+    }
+}
+
+.card-portrait{
+    height: 100%;
+    width: 100%;
+    .btn-purple{
+        top: 15px;
+        left: 10px;
+    }
+    h3{
+        position: absolute;
+        top: 60px;
+        left: 10px;
+    }
+    img{
+        position: absolute;
+        left: -15%;
+        top:-10%;
+        min-width: 140%;
+        min-height: 120%;
+    }
+}
+
+.card-portrait:hover{
+    cursor: pointer;
+    h3{
+        display: block;
+        color: white;
+    }
+    .btn-purple{
+        display:block;
+    }
+    img{
+        filter:brightness(50%);
+        min-width: 160%;
+        min-height: 140%;
+    }
+}
+
+
+.card-landscape:hover{
+    cursor: pointer;
+    h3{
+        display: block;
+        color: white;
+    }
+    .btn-purple{
+        display:block;
+    }
+    img{
+        filter:brightness(50%);
+        min-width: 140%;
+        min-height: 160%;
+    }
+}
+
+@media (min-width: 1400px){
+    .illus-gallery{  
+        height: 1200px;
+    }
+}
+
+@media (max-width:800px){
+    .illus-gallery{
+        max-height: 2000px;
+        grid-template-columns: 1fr;
+        .illus-gallery-2{
+            height: 600px;
+        }
+        .illus-gallery-3{
+            height: 800px;
+        }
+    }
+    #illus{
+        padding:50px 80px 50px 80px;
+    }
+}
+
+@media (max-width:500px){
+    .illus-gallery{
+        max-height: 1000px;
+        grid-template-columns: 1fr;
+        .illus-gallery-2{
+            height: 350px;
+        }
+        .illus-gallery-3{
+            height: 400px;
+        }
+    }
+    #illus{
+        padding:100px 10px 50px 10px;
+    }
+}

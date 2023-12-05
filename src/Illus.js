@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from "./Navbar";
 import Footer from './Footer';
 import "./styles/App.scss";
-import "./styles/card.scss";
+import "./styles/illus.scss";
 import {Link} from "react-router-dom";
 
 function Illus(props) {
