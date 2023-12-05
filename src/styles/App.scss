@@ -124,15 +124,6 @@ section{
 // reels
 
 #reels{
-
-  .reel-windows{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .reel-window{
-    position: relative;
-    padding: 10px;
-  }
   h2{
     color: white;
     font-weight: 600;
@@ -142,6 +133,19 @@ section{
     position: absolute;
     z-index:-500;
     top: 40%;
+  }
+}
+
+.reel-windows{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.reel-window{
+  position: relative;
+  padding: 15px;
+  .video-reel{
+    width: 100%;
+    min-height: 312px;
   }
 }
 
@@ -195,33 +199,6 @@ section{
   justify-content: left;
 }
 
-//illus
-
-#illus{
-  padding:50px 120px 50px 120px;
-  h2{
-    color: white;
-    font-weight: 600;
-    text-align: center;
-    font-size: 48px;
-    justify-content: center;
-  }
-
-}
-
-.illus-gallery{  height: 650px;
-  display: grid;
-  grid-gap:10px;
-  grid-template-columns: 5fr 3fr;
-}
-
-.illus-gallery-2{
-  grid-gap: 10px;
-  width: 650px;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 //comm
 
 #comm{
@@ -235,6 +212,8 @@ section{
   }
 
   table{
+    width:100%;
+    overflow-x: scroll;
     tr{
       color: white;
     }
@@ -287,10 +266,6 @@ section{
 
 //resopnsive
 
-
-@media (min-width: 1500px) {
-}
-
 @media (max-width: 900px) {
   #home{
     padding: 20px 80px;
@@ -311,23 +286,25 @@ section{
   .gallery-sm-pic{
     height: 300px;
   }
+
   .reel-windows{
     grid-template-columns: 1fr;
   }
-  .illus-gallery{
-    grid-template-columns: 1fr;
+  .reel-window{
+    .video-reel{
+      width: 100%;
+    }
   }
 
   section{
-    padding:50px 10px 50px 10px;
-  }
-
-  #illus{
-    padding:50px 10px 50px 10px;
+    padding:50px;
   }
 }
 
 @media (max-width: 500px) {
+  section{
+    padding:20px;
+  }
   #home{
     padding: 20px 30px;
   }
@@ -335,4 +312,33 @@ section{
     text-align: center;
     padding-top: 50px;
   }
+  #comm{
+    .comm-table{
+      margin: 30px 5px 50px 5px;
+    }
+  
+    table{
+      width:100%;
+      overflow-x: scroll;
+      tr{
+        color: white;
+      }
+      width: 100%;
+      font-size: 28px;
+      th{
+        color: #E4B0FC;
+      }
+      .table-head{
+        color:#E4B0FC;
+        font-weight: 800;
+      }
+      .notice{
+        border-radius: 5px;
+        padding: 5px 20px 5px 20px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  
 }

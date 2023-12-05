@@ -26,10 +26,12 @@ function Illus(props) {
                             <Link to="/commission" class="btn btn-purple fade-in-text">Commission This</Link>
                         </div>
                     </div>
-                    <div class="card card-portrait">
-                        <img src={require("./img/img4.jpg")} alt="Illustration by Louisa Shannon Tara" title="Illustration by Louisa Shannon Tara" />
-                        <h3 class="fade-in-text">Illustration</h3>
-                        <Link to="/commission" class="btn btn-purple fade-in-text">Commission This</Link>
+                    <div class="illus-gallery-3">
+                        <div class="card card-portrait">
+                            <img src={require("./img/img4.jpg")} alt="Illustration by Louisa Shannon Tara" title="Illustration by Louisa Shannon Tara" />
+                            <h3 class="fade-in-text">Illustration</h3>
+                            <Link to="/commission" class="btn btn-purple fade-in-text">Commission This</Link>
+                        </div>
                     </div>
                 </div>
             </section>

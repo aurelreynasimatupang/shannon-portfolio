@@ -1,5 +1,6 @@
 import React from 'react';
 import "./styles/App.scss";
+import {Link} from "react-router-dom";
 
 function Footer(props) {
     return (
@@ -19,9 +20,9 @@ function Footer(props) {
                 <div class="box">
                     <h4>Navigate</h4>
                     <ul>
-                        <li><a href="/reels">Demo reels</a></li>
-                        <li><a href="/illustrations">Illustrations</a></li>
-                        <li><a href="/commission">Commission</a></li>
+                        <li><Link to="/reels">Demo reels</Link></li>
+                        <li><Link to="/illustrations">Illustrations</Link></li>
+                        <li><Link href="/commission">Commission</Link></li>
                     </ul>
                 </div>
             </div>
