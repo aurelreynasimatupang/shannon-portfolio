@@ -30,6 +30,68 @@ h2{
   font-weight: 300;
 }
 
+// animations
+
+.slide-right, .slide-left {
+  width: 100%;
+}
+
+/***** Slide Right *****/
+.slide-right {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/***** Slide Left *****/
+.slide-left {
+  animation: 3s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.animate-pop {
+  animation-duration: 0.5s;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+.animate {
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 //nav
 
 nav{
@@ -44,6 +106,10 @@ nav{
   align-items: center;
   justify-content: space-between;
   font-weight: 400;
+}
+
+.nav-normal{
+  background-color: #7844cc;
 }
 
 nav .logo{
@@ -74,9 +140,11 @@ nav ul li{
 
 //home
 
+section{
+  padding:50px 90px 50px 90px;
+}
 
 #home{
-  padding:50px 80px 50px 80px;
   background-color: whitesmoke;
   text-align: center;
 }
@@ -148,9 +216,33 @@ nav ul li{
   }
 }
 
+// reels
+
+#reels{
+
+  .reel-windows{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .reel-window{
+    position: relative;
+    padding: 10px;
+  }
+  h2{
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 48px;
+    justify-content: center;
+    position: absolute;
+    z-index:-500;
+    top: 40%;
+  }
+}
+
 // footer
 #footer{
-  padding: 30px 50px 10px 50px;
+  padding: 30px 50px 40px 50px;
   width: 100%;
   min-height: 150px;
   background:none;
@@ -169,13 +261,13 @@ nav ul li{
   }
   p{
     color: white;
-    font-size: 12px;
+    font-size: 18px;
     font-weight:100;
   }
   a{
     font-weight: 100;
     color:white;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 100;
     text-decoration: none;
   }

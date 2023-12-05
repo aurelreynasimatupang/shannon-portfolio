@@ -8,14 +8,14 @@ function Main(props) {
         <div>
             <NavBarHome />
             <header className="App-header">
-                <h3>•Animation•</h3>
-                <h1>Louisa Shannon Tara</h1>
-                <h2>Animation Student</h2>
+                <h3 class="animate-pop">•Animation•</h3>
+                <h1 class="animate-pop">Louisa Shannon Tara</h1>
+                <h2 class="animate-pop">Animation Student</h2>
                 <video autoPlay loop muted plays-inline class="back-video">
                     <source src={require("./img/headervid.mp4")} />
                 </video>
             </header>
-            <div id="home">
+            <section id="home">
                 <br/><br/>
                 <h3>About</h3>
                 <p>Graduate from The One Academy.</p>
@@ -30,7 +30,7 @@ function Main(props) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <Footer />
         </div>
     );

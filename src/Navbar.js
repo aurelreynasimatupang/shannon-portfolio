@@ -4,7 +4,7 @@ import React from "react";
 
 function Navbar(props) {
     return (
-      <nav>
+      <nav class="nav-normal">
         <Link to="/"><img src={require("./img/logo.png")} class="logo" alt="Louisa Shannon Tara"></img></Link>
         <ul>
           <li><Link to="/" class="text-white">Home</Link></li>

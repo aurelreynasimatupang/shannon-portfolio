@@ -11,7 +11,7 @@ function Footer(props) {
                 </div>
                 <div class="box">
                     <h4>About Me</h4>
-                    <p>Animation student and other stuff. </p>
+                    <p>Bachelors animation student from Indonesia. </p>
                 </div>
                 <div class="box">
                     <h4>Navigate</h4>
