@@ -1,4 +1,5 @@
 import React from 'react';
+import "./styles/App.scss";
 
 function Footer(props) {
     return (
@@ -6,7 +7,9 @@ function Footer(props) {
             <div class="boxes">
                 <div class="box">
                     <h4>Contact me</h4>
-                    <p><i class="icon-ig"></i><i class="icon-fb"></i><i class="icon-li"></i></p>
+                    <p>
+                        <a href="https://www.instagram.com/shannonnntara/" target='_blank' title="Louisa Shannon Tara Instagram" rel="noreferrer"><i class="icon-ig"></i></a>
+                        <a href="https://www.artstation.com/shannipanini/" target="_blank" title="Louisa Shannon Tara Art Station" rel="noreferrer"><i class="icon-as"></i></a></p>
                     <p><i class="icon-advanced"></i> 2023</p>
                 </div>
                 <div class="box">

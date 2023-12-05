@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import "./styles/App.scss"
+import "./styles/animations.scss";
 
 function Reels(props) {
     return (

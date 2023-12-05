@@ -1,4 +1,5 @@
-import './App.scss';
+import "./styles/App.scss";
+import "./styles/navbar.scss";
 import {Link} from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
@@ -37,7 +38,7 @@ function Navbar(props) {
           <li><Link to="/" style={{color}}>Home</Link></li>
           <li><Link to="/reels" style={{color}}>Demo Reels</Link></li>
           <li><Link to="/illustrations" style={{color}}>Illustrations</Link></li>
-          <li><Link to="/sketches" style={{color}}>Sketches</Link></li>
+          <li><Link to="/sketches" style={{color}}>Commission</Link></li>
         </ul>
       </nav>
     );
