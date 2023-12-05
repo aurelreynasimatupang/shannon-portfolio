@@ -21,7 +21,7 @@ function Footer(props) {
                     <ul>
                         <li><a href="/reels">Demo reels</a></li>
                         <li><a href="/illustrations">Illustrations</a></li>
-                        <li><a href="/sketches">Sketches</a></li>
+                        <li><a href="/commission">Commission</a></li>
                     </ul>
                 </div>
             </div>

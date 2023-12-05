@@ -34,3 +34,11 @@ nav{
     display: inline-block;
     margin-left: 40px;
   }
+
+  @media (max-width: 500px) {
+    nav ul li{
+      list-style: none;
+      display: block;
+      margin-left: 40px;
+    }
+  }
