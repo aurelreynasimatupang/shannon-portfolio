@@ -218,6 +218,40 @@ section{
   grid-template-columns: 1fr;
 }
 
+//comm
+
+#comm{
+  h2{
+    color: white;
+    font-weight: 600;
+    font-size: 48px;
+  }
+  .comm-table{
+    margin: 0px 100px 50px 100px;
+  }
+
+  table{
+    tr{
+      color: white;
+    }
+    width: 100%;
+    font-size: 28px;
+    th{
+      color: #E4B0FC;
+    }
+    .table-head{
+      color:#E4B0FC;
+      font-weight: 800;
+    }
+    .notice{
+      border-radius: 5px;
+      padding: 5px 20px 5px 20px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
 // icons
 
 .icon-advanced {

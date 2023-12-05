@@ -11,7 +11,7 @@ function Navbar(props) {
           <li><Link to="/" class="text-white">Home</Link></li>
           <li><Link to="/reels" class="text-white">Demo Reels</Link></li>
           <li><Link to="/illustrations" class="text-white">Illustrations</Link></li>
-          <li><Link to="/sketches" class="text-white">Commission</Link></li>
+          <li><Link to="/commission" class="text-white">Commission</Link></li>
         </ul>
       </nav>
     );
